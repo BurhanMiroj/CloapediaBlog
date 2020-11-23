@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Cloapedia Blog - Article</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+</head>
+
+<body>
+    <!-- <div id="container-spinner" class="container-spinner bg-white w-screen h-screen flex justify-center items-center fixed top-0 left-0 z-50">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div> -->
+    <a href="#" class="scroll-top w-12 h-12 rounded fixed bottom-0 right-0 bg-blue-600 z-50 text-white flex justify-center items-center opacity-0 m-10">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+   <!-- top hidden -->
+   <div class="absolute w-screen h-24 bg-gray-900 flex items-center justify-around">
+    <div class="w-2/5 flex justify-start text-white">
+        <input class="text-xs md:text-md lg:text-2xl focus:outline-none placeholder-gray-700 bg-transparent w-full"
+            type="text" placeholder="What you are looking for?">
+    </div>
+    <div class="w-2/5 flex justify-end">
+        <div class="cursor-pointer w-16 h-10 flex justify-center items-center border-l-2 border-gray-700">
+            <i class="text-gray-700 fas fa-search text-2xl"></i>
+        </div>
+    </div>
+</div>
+<main class="container-body w-screen h-auto relative bg-white">
+    <div class="relative flex justify-center items-center w-full h-16 border-b-2 border-dashed">
+        <div class="social-media justify-start items-center w-1/4 lg:w-2/6 h-10 hidden md:flex">
+            <a href="#"><i class="mx-1 text-xs fab fa-facebook-f"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-youtube"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-pinterest"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-twitter"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-flickr"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-instagram"></i></a>
+            <a href="#"><i class="mx-1 text-xs fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="top-center-icon cursor-pointer items-center w-auto h-10 hidden lg:flex">
+            <a class="mx-2" href="#"><i class="mr-1 text-sm fas fa-star"></i>Trends</a>
+            <a class="mx-2" href="#"><i class="mr-1 text-sm fas fa-bolt"></i>Hot Topics</a>
+            <a class="mx-2" href="#"><i class="mr-1 text-sm fas fa-user-circle"></i>Write for us</a>
+        </div>
+        <div class="w-1/4 lg:w-2/6 h-10 text-gray-700 flex justify-center md:justify-end items-center">
+            <button class="open-btn cursor-pointer focus:outline-none"><i class="fas fa-search text-gray-700 mr-2 text-xs"></i>Search</button>
+        </div>
+    </div>
+    <div class="logo-head hidden lg:flex w-screen h-40 justify-center items-center">
+        <a href="#"><img class="w-40 md:w-64 lg:w-auto" src="/images/flogo.png" alt="Logo"></a>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar relative w-screen h-20 lg:h-32 flex justify-center items-center pb-4">
+        <div class="menu-btn cursor-pointer flex absolute right-0 mr-12 text-white bg-blue-600 px-5 py-3 text-lg rounded lg:hidden">
+            <i class="fas fa-bars"></i>
+        </div>
+        <a href="#"></a> <img class="absolute left-0 ml-12 w-32 lg:hidden" src="/images/logo.png" alt="logo"></a>
+        <ul class="list-menu w-screen absolute z-50 lg:z-auto hidden pb-6 lg:pb-0 lg:flex top-0 mt-16 lg:mt-16 flex-col lg:flex-row lg:w-3/5 justify-evenly items-start lg:items-center bg-white">
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="/index.html">Home</a></li>
+            <li class="font-bold hidden lg:flex dropdown mt-3 ml-16 lg:m-0 relative"><a href="#">Category<i class="fas fa-chevron-down text-xs ml-2"></i></a>
+                <ul class="dropdown-list relative lg:absolute z-0 lg:my-2 opacity-0 h-auto flex-col justify-evenly text-justify text-gray-800 bg-white hidden lg:flex lg:flex-row lg:mt-8 lg:-ml-24">
+                    <div class="flex border">
+                    <a href="#">
+                        <div class="card-img-dropdown w-64 py-6 h-full bg-white flex justify-center items-center flex-col">
+                            <img class="w-2/3" src="/upload/blog_05.jpg" alt="">
+                            <h1 class="mt-1 text-md font-black">Title here</h1>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card-img-dropdown w-64 py-6 h-full bg-white flex justify-center items-center flex-col">
+                            <img class="w-2/3" src="/upload/blog_05.jpg" alt="">
+                            <h1 class="mt-1 text-md font-black">Title here</h1>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card-img-dropdown w-64 py-6 h-full bg-white flex justify-center items-center flex-col">
+                            <img class="w-2/3" src="/upload/blog_05.jpg" alt="">
+                            <h1 class="mt-1 text-md font-black">Title here</h1>
+                        </div>
+                    </a>
+                    </div>
+                </ul>
+            </li>
+            <li class="font-bold dropdown mt-3 ml-16 lg:m-0 relative"><a href="#">Features<i class="fas fa-chevron-down text-xs ml-2"></i></a>
+                <ul class="dropdown-list font-normal relative lg:absolute z-0 lg:my-2 opacity-0 h-auto flex-col justify-evenly text-justify text-gray-800 bg-white hidden lg:flex">
+                    <li class="hover:bg-gray-300 dropdown-sub hover:border-transparent py-2 pl-6 w-48 lg:w-64 border flex items-center relative dropdown-sub"><a href="#">Single Blog</a><i class="fas fa-chevron-right text-xs absolute right-0 mr-5 opacity-0 lg:opacity-100"></i>
+                        <ul class="dropdown-list-sub font-normal absolute top-0 right-0 h-auto flex-col justify-evenly text-justify text-gray-800 bg-white hidden lg:flex">
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover:bg-gray-300 dropdown-sub hover:border-transparent py-2 pl-6 w-48 lg:w-64 border flex items-center relative dropdown-sub"><a href="#">Single Blog</a><i class="fas fa-chevron-right text-xs absolute right-0 mr-5 opacity-0 lg:opacity-100"></i>
+                        <ul class="dropdown-list-sub font-normal absolute top-0 right-0 h-auto flex-col justify-evenly text-justify text-gray-800 bg-white hidden lg:flex">
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                            <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Dropdown submenu</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Blog Author</a></li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Contact Page</a></li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Default Page</a></li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Fullwidth Page</a></li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="/404.html">Not Found Page</a></li>
+                    <li class="hover:bg-gray-300 hover:border-transparent py-2 pl-6 w-48 lg:w-64 border"><a href="#">Sitemap & Archives</a></li>
+                </ul>
+            </li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Fashion</a></li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Food</a></li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Lifestyle</a></li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Travel</a></li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Vlogs</a></li>
+            <li class="font-bold mt-3 ml-16 lg:m-0"><a href="#">Health</a></li>
+        </ul>
+    </nav>
+        <div class="container -mt-4 relative border-dashed border-t mx-auto h-auto flex flex-col xl:flex-row">
+            <!-- left -->
+            <div class="w-auto lg:w-3/4 h-auto m-3 text-center lg:text-left lg:ml-20">
+                <div class="hidden lg:flex w-full text-xs lg:text-sm text-gray-600">
+                    <p>Home <span class="mx-2">/</span> Blog <span class="mx-2">/</span> The golden rules you need to
+                        know for a positive life</p>
+                </div>
+                <div class="w-full text-sm py-2">
+                    <button class="mt-2 focus:outline-none bg-green-500 text-white px-4 py-1">Lifestyle</button>
+                </div>
+                <div class="w-full text-2xl lg:text-4xl font-bold py-4">
+                    <h1>The golden rules you need to know for a positive life</h1>
+                </div>
+                <div class="w-full text-xs lg:text-sm text-gray-600">
+                    <p>21 JULY, 2017 <span>/</span> BY JESSICA <span>/</span> <i class="fas fa-eye"></i> 2344</p>
+                </div>
+                <div class="share-container lg:m-0 inline-flex justify-evenly items-center h-20">
+                    <a href="#" class="lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-facebook-f"></i><span class="pr-2 hidden xl:flex text-sm">Share on Facebook</span></a>
+                    <a href="#" class="ml-1 lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-twitter"></i><span class="pr-2 hidden xl:flex text-sm">Tweet on Twitter</span></a>
+                    <a href="#" class="ml-1 lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="w-full mx-0 my-2">
+                    <img class="w-full" src="/upload/blog_07.jpg" alt="">
+                </div>
+                <div class="w-full lg:p-5 text-left">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet facere officiis, quasi quam
+                        exercitationem omnis pariatur impedit ipsa fugit. Tempora, assumenda. Ipsa corporis animi eius
+                        hic dolores, laudantium in exercitationem?</p>
+                    <h1 class="text-3xl font-bold my-6">Text Heading Here</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro autem accusamus, atque ab labore
+                        cupiditate voluptates libero alias obcaecati laborum reprehenderit corrupti dolores laboriosam
+                        incidunt vel temporibus accusantium repellendus inventore!
+                        Accusantium amet nemo distinctio quam necessitatibus, nulla fugiat expedita facilis assumenda,
+                        neque voluptatibus vero, dicta blanditiis. Iure iste nam quaerat molestias asperiores id nulla,
+                        repellat provident culpa vero praesentium sunt?
+                        Quaerat eveniet, eaque illum obcaecati a eius fugit excepturi blanditiis unde earum quos in! Sit
+                        repellendus possimus minus molestiae modi, nulla, non quasi minima est quas magnam ab veniam
+                        culpa?
+                        Ex beatae enim numquam necessitatibus, quae cum dolor, assumenda nam quas eum saepe ducimus
+                        quasi nulla eos eveniet, possimus laborum aliquam repudiandae sint suscipit et! Laboriosam eaque
+                        harum nostrum consequatur!</p>
+                </div>
+                <div class="w-full m-0 my-16">
+                    <img class="w-full" src="/upload/blog_07.jpg" alt="">
+                </div>
+                <div class="w-full lg:p-5 text-left">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet facere officiis, quasi quam
+                        exercitationem omnis pariatur impedit ipsa fugit. Tempora, assumenda. Ipsa corporis animi eius
+                        hic dolores, laudantium in exercitationem?</p>
+                    <h1 class="text-xl lg:p-8 font-bold my-2">Text Heading Here</h1>
+                    <ul class="lg:px-16">
+                        <li class="py-1"><i class="fas fa-chevron-right text-xs mr-3"></i>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit</li>
+                        <li class="py-1"><i class="fas fa-chevron-right text-xs mr-3"></i>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit</li>
+                        <li class="py-1"><i class="fas fa-chevron-right text-xs mr-3"></i>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit</li>
+                        <li class="py-1"><i class="fas fa-chevron-right text-xs mr-3"></i>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit</li>
+                        <li class="py-1"><i class="fas fa-chevron-right text-xs mr-3"></i>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit</li>
+                    </ul>
+                </div>
+                <div class="w-full lg:p-5 text-left">
+                    <img src="/upload/adslong.jpg" alt="ads">
+                </div>
+                <h1 class="mt-12">Share this article</h1>
+                <div class="share-container lg:m-0 inline-flex justify-evenly items-center h-20">
+                    <a href="#" class="lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-facebook-f"></i><span class="pr-2 hidden xl:flex text-sm">Share on Facebook</span></a>
+                    <a href="#" class="ml-1 lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-twitter"></i><span class="pr-2 hidden xl:flex text-sm">Tweet on Twitter</span></a>
+                    <a href="#" class="ml-1 lg:w-auto w-10 h-10 flex items-center justify-center text-white"><i class="lg:px-2 fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="my-4 ml-3 w-auto lg:w-1/4 h-auto lg:mr-20">
+                <div class="w-auto py-6 lg:py-2 lg:ml-0 font-bold">
+                    <h1>Search on this site</h1>
+                </div>
+                <div class="w-full border lg:m-0 lg:px-0 lg:w-auto flex justify-between h-auto lg:h-12">
+                    <input class="h-12 lg:pl-3 focus:outline-none text-xs" type="text"
+                        placeholder="Search article here">
+                    <button class="h-12 w-16 lg:px-5 bg-gray-800 focus:outline-none text-xs text-white"><i
+                            class="fa fa-search text-xs"></i></button>
+                </div>
+                <div class="w-auto pt-8 font-bold">
+                    <h1>Recent Posts</h1>
+                </div>
+                <!-- article section -->
+                <div class="w-auto py-4 flex flex-col">
+                    <a href="#">
+                        <div class="w-full h-20 my-2 flex">
+                            <img src="/upload/small_01.jpg" alt="image upload small">
+                            <div class="flex flex-col justify-center pl-2">
+                                <h1 class="font-semibold hover:underline">Heading Article Can Placed Here</h1>
+                                <p class="text-xs">09 / November / 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="w-full h-20 my-2 flex">
+                            <img src="/upload/small_01.jpg" alt="image upload small">
+                            <div class="flex flex-col justify-center pl-2">
+                                <h1 class="font-semibold hover:underline">Heading Article Can Placed Here</h1>
+                                <p class="text-xs">09 / November / 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="w-full h-20 my-2 flex">
+                            <img src="/upload/small_01.jpg" alt="image upload small">
+                            <div class="flex flex-col justify-center pl-2">
+                                <h1 class="font-semibold hover:underline">Heading Article Can Placed Here</h1>
+                                <p class="text-xs">09 / November / 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="w-auto mr-3 my-8 font-bold">
+                        <h1>Advertising</h1>
+                        <img class="w-full mt-6" src="/upload/author.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer" class="flex flex-col bg-gray-200">
+            <div class="h-auto flex flex-col lg:flex-row justify-center">
+                <!-- first -->
+                <div class="w-full lg:w-1/4 h-auto text-white">
+                    <h1 class="text-xl font-bold pt-2 pl-2 text-black my-6 lg:my-8">Recent posts</h1>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black">Article Name</h1>
+                                <p class="text-xs text-gray-700">09 November 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black">Article Name</h1>
+                                <p class="text-xs text-gray-700">09 November 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black">Article Name</h1>
+                                <p class="text-xs text-gray-700">09 November 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- second -->
+                <div class="w-full lg:w-1/4 h-auto text-white">
+                    <h1 class="text-xl font-bold pt-2 pl-2 text-black my-6 lg:my-8">Popular posts</h1>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black pb-1">Article Name</h1>
+                                <div class="w-24 h-auto flex text-xs justify-evenly text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black pb-1">Article Name</h1>
+                                <div class="w-24 h-auto flex text-xs justify-evenly text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="my-2 w-full lg:w-4/5 h-20 flex items-center">
+                            <div class="mx-2 h-16 w-16">
+                                <img src="/upload/small_01.jpg" alt="">
+                            </div>
+                            <div class="w-auto h-16 flex flex-col justify-center">
+                                <h1 class="text-md text-black pb-1">Article Name</h1>
+                                <div class="w-24 h-auto flex text-xs justify-evenly text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- third -->
+                <div class="w-full lg:w-1/4 h-auto text-sm">
+                    <h1 class="text-xl font-bold px-6 lg:px-0 pt-2 pl-2 my-6 lg:my-8">Popular Categories</h1>
+                    <ul class="h-64 mt-1 flex flex-col justify-evenly text-gray-700">
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Fashion<span>(21)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Lifestyle<span>(15)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between" href="#">Art
+                                & Design<span>(31)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Healty Beauty<span>(22)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Clothing<span>(66)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Entertainment<span>(11)</span></a></li>
+                        <li><a class="flex w-full lg:w-4/5 px-2 lg:p-0 h-auto text-justify justify-between"
+                                href="#">Food & Drink<span>(87)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="w-screen h-auto py-8 flex justify-center items-center">
+                <img class="w-40 md:w-64 lg:w-auto" src="/images/flogo.png" alt="">
+            </a>
+            <div class="w-auto mx-8 h-24 text-center text-sm">
+                <h1 class="text-sm md:text-base">Cloapedia is a personal blog for handcrafted, cameramade photography content, fashion styles from  <br class="hidden lg:flex"> independent creatives around the world.</h1>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="social-media flex justify-center items-center w-screen pt-10">
+                <a href="#"><i class="mx-1 text-md fab fa-facebook-f"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-youtube"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-pinterest"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-twitter"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-flickr"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-instagram"></i></a>
+                <a href="#"><i class="mx-1 text-md fab fa-google-plus-g"></i></a>
+            </div>
+            <div class="w-screen h-40 flex justify-center items-center">
+                <div class="w-full mx-6 lg:m-0 lg:w-auto flex flex-col md:flex-row h-auto lg:h-12 bg-gray-800">
+                    <input class="h-12 pl-3 pr-10 lg:pr-40 focus:outline-none text-xs" type="text" placeholder="Enter your email adress">
+                    <button class="btn-subs h-12 w-auto lg:pl-5 bg-gray-800 focus:outline-none text-xs text-white">Subscribe<i class="far fa-envelope-open text-md px-4"></i></button>
+                </div>
+            </div>
+            <div class="w-screen text-center pb-10 text-xs md:text-base">
+                <h1>&copy; Cloapedia. Design: HTML Design.</h1>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const scrollBtn = document.querySelector(".scroll-top");
+        const logo = document.querySelector(".logo-head");
+        window.addEventListener("scroll", function () {
+            const wScroll = this.scrollY;
+
+            if (wScroll > logo.clientHeight) {
+                scrollBtn.classList.add("active")
+            } else {
+                scrollBtn.classList.remove("active")
+            }
+        })
+    </script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/b07851900c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
